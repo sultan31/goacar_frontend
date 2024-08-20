@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- remix icon -->
+    <!-- <link rel="stylesheet" href="styles/remixicon.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- jquery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/jquery.timepicker.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="assets/fav.png">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <title>GoaCarRentalServices</title>
+    
+</head>
+
+<body>
+    <div class="pre_loader">
+        <img src="assets/preloader2.gif" alt="" srcset="">
+    </div>
+
+    <div class="cto_container" id="cto_container">
+        <a href="tel:+919867344336"><i class="ri-phone-fill cto_c"></i></a>
+        <a href="https://wa.me/+919867344336"><i class="ri-whatsapp-fill cto_w"></i></a>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header_container">
+
+            
+            <a href="#" class="logo"> <span>G</span>C<span class="">R</span>S</a>
+            
+            <i id="menu-btn" class="ri-menu-line"></i>
+            
+            <nav class="navbar">
+                <div class="nav_link_container">
+                    <i class="ri-close-fill" id="close-btn"></i>
+                    <div class="nav_links">
+                        <a href="#Home" class="active-link">Home</a>
+                        <a href="cars.html">Cars</a>
+                        <a href="#Bikes">Bikes</a>
+                        <a href="#Services">Services</a>
+                        <a href="#Contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <section class="home" id="Home">
+        <div class="overlay">
+            <div class="reservation_container">
+                <h1><span>Goa</span> Car Rental Services -</h1>
+                <h2 class="sub_heading">Rent Your Perfect Ride in <span>GOA.</span></h2>
+
+                <form method="post" name="car-select-form" id="reservation_form">
+                    <h2>Lets Book Your Ride</h2>
+
+                    <select name="car-select" id="car-select" required>
+                        <!-- cars -->
+                        <option value="">Select Car/Bike type</option>
+                        <option value="Wagon R - ₹900/Day">Wagon R - &#x20B9;900/Day</option>
+                        <option value="i10 - ₹900/Day">i10 - &#x20B9;900/Day</option>
+                        <option value="Swift - ₹1000/Day">Swift - &#x20B9;1000/Day</option>
+                        <option value="Baleno - ₹1000/Day">Baleno - &#x20B9;1000/Day</option>
+                        <option value="i20 - ₹1000/Day">i20 - &#x20B9;1000/Day</option>
+                        <option value="Liva - ₹1200/Day">Liva - &#x20B9;1200/Day</option>
+                        <option value="i10 Grande Auto - ₹1200/Day">i10 Grande Auto - &#x20B9;1200/Day</option>
+                        <option value="Swift Auto - ₹1300/Day">Swift Auto - &#x20B9;1300/Day</option>
+                        <option value="Ertiga - ₹1800/Day">Ertiga - &#x20B9;1800/Day</option>
+                        <option value="Thar - ₹1800/Day">Thar - &#x20B9;1800/Day</option>
+                        <option value="Innova Regular - ₹2000/Day">Innova Regular - &#x20B9;2000/Day</option>
+                        <option value="Creta Manual - ₹2200/Day">Creta Manual - &#x20B9;2200/Day</option>
+                        <option value="Innova Crysta Manual - ₹2500/Day">Innova Crysta Manual - &#x20B9;2500/Day
+                        <option value="Creta Auto - ₹2800/Day">Creta Auto - &#x20B9;2800/Day</option>
+                        </option>
+                        <option value="Innova Crysta Auto - ₹3000/Day">Innova Crysta Auto - &#x20B9;3000/Day</option>
+                        <option value="New Thar - ₹3800/Day">New Thar - &#x20B9;3800/Day</option>
+                        <option value="Fortuner Old - ₹4000/Day">Fortuner Old - &#x20B9;4000/Day</option>
+                        <option value="Fortuner Auto - ₹6000/Day">Fortuner New - &#x20B9;6000/Day</option>
+                        <option value="Endeavor - ₹6000/Day">Endeavor - &#x20B9;6000/Day</option>
+
+                        <!-- bikes -->
+                        <option value="Activa - ₹400/Day">Activa - &#x20B9;400/Day</option>
+                        <option value="Fasicno - ₹400/Day">Fasicno - &#x20B9;400/Day</option>
+                        <option value="Dio - ₹400/Day">Dio - 400/Day</option>
+                        <option value="Vespa - ₹500/Day">Vespa - &#x20B9;500/Day</option>
+                        <option value="TVS Ntorq - ₹500/Day">TVS Ntorq - &#x20B9;500/Day</option>
+                        <option value="Aprilia - ₹600/Day">Aprilia - &#x20B9;600/Day</option>
+                        <option value="KTM Duke 200 - ₹700/Day">KTM Duke 200 - &#x20B9;700/Day</option>
+                        <option value="Avenger - ₹700/Day">Avenger - &#x20B9;700/Day</option>
+                        <option value="R15 - ₹700/Day">R15 - &#x20B9;700/Day</option>
+                        <option value="KTM Duke 250 New - ₹800/Day">KTM Duke 250 New - &#x20B9;800/Day</option>
+                        <option value="KTM RC 200 OLD - ₹800/Day">KTM RC 200 OLD - &#x20B9;800/Day</option>
+                        <option value="Bullet Electra - ₹800/Day">Bullet Electra - &#x20B9;800/Day</option>
+                        <option value="Bullet Classic - ₹900/Day">Bullet Classic - &#x20B9;900/Day</option>
+                        <option value="Bullet Thunderbird Old - ₹900/Day">Bullet Thunderbird Old - &#x20B9;900/Day
+                        </option>
+                        <option value="KTM Duke 390 Old - ₹1000/Day">KTM Duke 390 Old - &#x20B9;1000/Day</option>
+                        <option value="Bullet Thunderbird New - ₹1000/Day">Bullet Thunderbird New - &#x20B9;1000/Day
+                        </option>
+                        <option value="KTM Duke 390 New - ₹1100/Day">KTM Duke 390 New - &#x20B9;1100/Day</option>
+                        <option value="Benelli 300 - ₹3000/Day">Benelli 300 - &#x20B9;3000/Day </option>
+                        <option value="Harley Davidson 750 Street - ₹3500/Day">Harley Davidson 750 Street -
+                            &#x20B9;3500/Day</option>
+                        <option value="Harley Davidson Iron - ₹4500/Day">Harley Davidson Iron - &#x20B9;4500/Day
+                        </option>
+                        <option value="Benelli 600 - ₹5000/Day">Benelli 600 - &#x20B9;5000/Day</option>
+                        <option value="Harley Davidson Roster - ₹6000/Day">Harley Davidson Roster - &#x20B9;6000/Day
+                        </option>
+                        <option value="Harley Davidson 48 - ₹8000/Day">Harley Davidson 48 - &#x20B9;8000/Day</option>
+                        <option value="Harley Davidson Fatboy - ₹10000/Day">Harley Davidson Fatboy - &#x20B9;10000/Day
+                        </option>
+                    </select>
+
+                    <select name="pick-up-location" id="pick-up-location" required>
+                        <option value="">Select your Pickup Location</option>
+                        <option value="Panjim ">Panjim</option>
+                        <option value="Vasco da Gama">Vasco da Gama</option>
+                        <option value="Dabolim Airport">Dabolim Airport</option>
+                        <option value="Anjuna ">Anjuna</option>
+                        <option value="Calangute ">Calangute</option>
+                        <option value="Thivim ">Thivim</option>
+                        <option value="Karmali ">Karmali</option>
+                        <option value="Margao ">Margao</option>
+                        <option value="Goa Airport ">Goa Airport</option>
+                    </select>
+
+                    <select name="drop-off-location" id="drop-off-location" required>
+                        <option value="">Select your Drop-off Location</option>
+                        <option value="Panjim ">Panjim</option>
+                        <option value="Vasco da Gama">Vasco da Gama</option>
+                        <option value="Dabolim Airport">Dabolim Airport</option>
+                        <option value="Anjuna ">Anjuna</option>
+                        <option value="Calangute ">Calangute</option>
+                        <option value="Thivim ">Thivim</option>
+                        <option value="Karmali ">Karmali</option>
+                        <option value="Margao ">Margao</option>
+                        <option value="Goa Airport ">Goa Airport</option>
+                    </select>
+
+                    <div class="input_grp">
+                        <div class="dt">
+                            <div>
+                                <label for="pick_d">Pick-up date:</label>
+                                <input type="text" autocomplete="off" placeholder="mm/dd/yyyy" id="pick_d" name="pick_d"
+                                    required readonly>
+                            </div>
+                            <div>
+                                <label for="pick_t">Pick-up time:</label>
+                                <input type="text" autocomplete="off" placeholder="hh/mm" id="pick_t" name="pick_t"
+                                    required readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input_grp">
+                        <div class="dt">
+                            <div>
+                                <label for="drop_d">Drop-off date:</label>
+                                <input type="text" autocomplete="off" placeholder="mm/dd/yyyy" id="drop_d" name="drop_t"
+                                    required readonly>
+                            </div>
+                            <div>
+                                <label for="drop_t">Drop-off time:</label>
+                                <input type="text" autocomplete="off" placeholder="hh/mm" id="drop_t" name="drop_t"
+                                    required readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit btn btn_disabled" name="submit" id="checkout">Continue
+                        Booking</button>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal_heading">Confirm Reservation</h2>
+                <span class="close close1">&times;</span>
+                <span class="close close2">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal_data_container">
+                    <h3 class="modal_data_heading">Preferences</h3>
+
+                    <div class="modal_data">
+                        <div class="data_header">
+                            <i class="ri-car-line"></i>
+                            <h4 class="data_heading">Car Type</h4>
+                        </div>
+                        <div class="data_content car_type">-</div>
+                    </div>
+
+                    <div class="modal_data">
+                        <div class="data_header">
+                            <i class="ri-map-pin-range-line"></i>
+                            <h4 class="data_heading">Pick-Up Location</h4>
+                        </div>
+                        <div class="data_content pick_loc">-</div>
+                    </div>
+
+                    <div class="modal_data">
+                        <div class="data_header">
+                            <i class="ri-map-pin-range-line"></i>
+                            <h4 class="data_heading">Drop-Off Location</h4>
+                        </div>
+                        <div class="data_content drop_loc">-</div>
+                    </div>
+
+                    <div class="modal_data">
+                        <div class="data_header">
+                            <i class="ri-map-pin-range-line"></i>
+                            <h4 class="data_heading">Drop-Off Location</h4>
+                        </div>
+                        <div class="data_content drop_loc">-</div>
+                    </div>
+
+                    <div class="modal_data">
+                        <div class="data_header">
+                            <i class="ri-calendar-event-line"></i>
+                            <h4 class="data_heading">Pick-Up Date and Time</h4>
+                        </div>
+                        <div class="data_content pick_dt">-</div>
+                    </div>
+
+                    <div class="modal_data">
+                        <div class="data_header">
+                            <i class="ri-calendar-check-line"></i>
+                            <h4 class="data_heading">Drop-Off Date and Time</h4>
+                        </div>
+                        <div class="data_content drop_dt">-</div>
+                    </div>
+
+                </div>
+                <div class="vertical_line modal_data_container"></div>
+                <div class="modal_data_container">
+                    <h3 class="modal_data_heading">Personal Information</h3>
+                    <form action="" method="" id="confirm_form">
+                        <input type="text" name="carType" id="carType" hidden>
+                        <input type="text" name="pickLocation" id="pickLocation" hidden>
+                        <input type="text" name="dropLocation" id="dropLocation" hidden>
+                        <input type="text" name="pickDateTime" id="pickDateTime" hidden>
+                        <input type="text" name="dropDateTime" id="dropDateTime" hidden>
+                        <input type="text" name="inputCode" id="inputCode" hidden>
+                        <input type="text" name="tokenDataURL" id="tokenDataURL" hidden>
+
+                        <div class="input_grp">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required name="name">
+                        </div>
+
+                        <div class="input_grp">
+                            <label for="name">Phone Number</label>
+                            <input type="tel" id="phone" pattern="[+6789][0-9]\d{8,12}" required name="phone"
+                                oninvalid="this.setCustomValidity('Enter a valid number')"
+                                onchange="this.setCustomValidity('')">
+                        </div>
+
+                        <div class="input_grp">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required name="email">
+                        </div>
+
+                        <div class="input_grp btn_container">
+                            <button type="submit" class="submit btn btn_confirm" name="submit"
+                                id="checkout2">Confirm Booking</button>
+                            <img src="assets/loading.gif" id="loading" alt="" srcset="">
+                        </div>
+                    </form>
+                </div>
+                <div class="success_modal_container" id="success_modal_container">
+                    <!-- <img src="assets/success.gif" alt="" srcset=""> -->
+
+                    <!-- Booking Token -->
+                    <div class="token_resp_container" id="token_resp_container">
+
+                        <div class="token" id="token">
+                            <div class="token_container">
+
+                                <div class="token_header">
+                                    <a href="#" class="logo"> <span>Goa</span>CarRentalService </a>
+                                    <h2>----Booking Token----</h2>
+                                </div>
+                                <div class="token_body">
+                                    <div class="token_data_container">
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-user-3-line"></i>
+                                                <h4 class="data_heading">Full Name-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_name"></div>
+                                        </div>
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-phone-line"></i>
+                                                <h4 class="data_heading">Phone Number-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_number"></div>
+                                        </div>
+
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-mail-line"></i>
+                                                <h4 class="data_heading">Email-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_email"></div>
+                                        </div>
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-car-line"></i>
+                                                <h4 class="data_heading">Car Type-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_car_type"></div>
+                                        </div>
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-map-pin-range-line"></i>
+                                                <h4 class="data_heading">Pick-Up Location-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_pick_loc"></div>
+                                        </div>
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-map-pin-range-line"></i>
+                                                <h4 class="data_heading">Drop-Off Location-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_drop_loc"></div>
+                                        </div>
+
+                                        
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-calendar-event-line"></i>
+                                                <h4 class="data_heading">Pick-Up Date and Time-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_pick_dt"></div>
+                                        </div>
+
+                                        <div class="modal_data">
+                                            <div class="data_header">
+                                                <i class="ri-calendar-check-line"></i>
+                                                <h4 class="data_heading">Drop-Off Date and Time-&nbsp;&nbsp;</h4>
+                                            </div>
+                                            <div class="data_content token_drop_dt"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="code_container">
+                                        <p>Your Token Code -</p>
+                                        <div class="token_code">
+                                            
+                                        </div>
+                                        <p class="advice">(Please don't share this code)</p>
+                                    </div>
+                                </div>
+                                <div class="token_footer">
+                                    In case of any query please contact us at +919876344336 or leave your mail at
+                                    goacarrentalcarrental@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <p>Congratulations! you are just few steps away from confirming your booking. Please <a
+                            download="Token-GoaCarRentalServices.png" href="" id="download_again" target="_blank">click
+                            here</a> to download the token if not downloaded automatically. Please confirm your booking by whatsapp or call.</p>
+                    <div class="confirm_booking_container">
+                        <div class="whatsapp_confirmation">
+                            <a class="book_btn btn_whatsapp btn_whatsapp_confirmation"
+                                href=""><i
+                                    class="ri-whatsapp-line"></i>Whatsapp Confirmation</a>
+                                    <p class="confirmation_info">Share your code with us on whatsapp to confirm your booking.</p>
+                                </div>
+                        <p class="or">or</p>
+                        <div class="vl"></div>
+                        <div class="phone_confirmation">
+                            <a class="book_btn web_booking btn_phone_confirmation" href="tel:+919867344336"><i class="ri-phone-fill cto_c"></i>Call Confirmation</a>
+                            <p class="confirmation_info">Call and share your code with us on call to confirm your booking.</p>
+                        </div>
+                    </div>
+                    <!-- <button class="submit btn btn_confirm">Download Token</button> -->
+
+                </div>
+                <div class="error_model_container">
+                    <img src="assets/error.jpg" alt="error image">
+                    <p>We are facing some problems with our server and could not take booking from our website. You can use whatsapp booking or try again later.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <section class="steps_container">
+        <h1 class="section_heading">How it works?</h1>
+        <div class="steps">
+
+            <div class="step step1">
+                <i class="fas fa-align-justify"></i>
+                <p>Fill and submit the form</p>
+            </div>
+
+            <div class="connector"></div>
+
+            <div class="step step2">
+                <i class="fas fa-check-circle"></i>
+                <p>We will recieve your request and confirm your booking</p>
+            </div>
+
+            <div class="connector"></div>
+
+            <div class="step step3">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Get your car on pick-up location</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cars_container" id="Cars">
+        <h1 class="section_heading">Best Rental Cars in Goa</h1>
+        <p class="subtitle_p">
+            Select from wide ranges of well maintained cars. We provide best car rental services in entire Goa. Book
+            from our website or we also accept booking from whatsapp.
+        </p>
+        <div class="cars">
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/wagonR.jpg" alt="wagon R Car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Wagon R</h3>
+                    <p>Starting from &#x20B9;900/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Wagon R - ₹900/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Wagon%20R"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/i10.webp" alt="i10 Car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>i10</h3>
+                    <p>Starting from &#x20B9;900/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="i10 - ₹900/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20i10"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/swift.jpg" alt="Swift Car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Swift</h3>
+                    <p>Starting from &#x20B9;1000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Swift - ₹1000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Swift"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/baleno.jpg" alt="Baleno car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Baleno</h3>
+                    <p>Starting from &#x20B9;1000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Baleno - ₹1000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Baleno"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/i20.jpg" alt="i20 car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>i20</h3>
+                    <p>Starting from &#x20B9;1000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="i20 - ₹1000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20i20"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/liva.png" alt="Liva car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Liva</h3>
+                    <p>Starting from &#x20B9;1200/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Liva - ₹1200/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Liva"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/i10GrandAuto.png" alt="i10 Grand Auto car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>i10 Grand Auto</h3>
+                    <p>Starting from &#x20B9;1200/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="i10 Grande Auto - ₹1200/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20i10%20Grand%20Auto"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/swiftAuto.jpg" alt="Swift Auto car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Swift Auto</h3>
+                    <p>Starting from &#x20B9;1300/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Swift Auto - ₹1300/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Swift%20Auto"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/ertiga.jpg" alt="Ertiga car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Ertiga</h3>
+                    <p>Starting from &#x20B9;1800/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Ertiga - ₹1800/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Ertiga"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/thar.jpg" alt="Thar car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Thar</h3>
+                    <p>Starting from &#x20B9;1800/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Thar - ₹1800/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Thar"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/innovaRegular.jpg" alt="Innova Regular car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Innova Regular</h3>
+                    <p>Starting from &#x20B9;2000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Innova Regular - ₹2000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Innova%20Regular"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/creta.jpg" alt="Creta Manual car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Creta Manual</h3>
+                    <p>Starting from &#x20B9;2200/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Creta Manual - ₹2200/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Creta"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/crystaManual.jpg" alt="Innova Crysta Manual car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Innova Crysta Manual</h3>
+                    <p>Starting from &#x20B9;2500/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Innova Crysta Manual - ₹2500/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Crysta%20Manual"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/cretaAuto.jpg" alt="Creta Auto car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Creta Auto</h3>
+                    <p>Starting from &#x20B9;2800/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Creta Auto - ₹2800/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Creta%20Auto"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/crystaAuto.jpg" alt="Innova Crysta Auto car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Innova Crysta Auto</h3>
+                    <p>Starting from &#x20B9;3000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Innova Crysta Auto - ₹3000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Crysta%20Auto"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/newThar.jpg" alt="New Thar car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>New Thar</h3>
+                    <p>Starting from &#x20B9;3800/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="New Thar - ₹3800/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20New%20Thar"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/fortunerOld.jpg" alt="Fortuner Old car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Fortuner Old</h3>
+                    <p>Starting from &#x20B9;4000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Fortuner Old - ₹4000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Fortuner%20Old"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/fortunerAuto.jpg" alt="Fortuner Auto car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Fortuner Auto</h3>
+                    <p>Starting from &#x20B9;6000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Fortuner Auto - ₹6000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Fortuner%20Auto"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/endeavor.jpg" alt="Endeavor car Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Endeavor</h3>
+                    <p>Starting from &#x20B9;6000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Endeavor - ₹6000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Endeavor"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="cars_container bike_container" id="Bikes">
+        <h1 class="section_heading">Best Rental Bikes in Goa</h1>
+        <p class="subtitle_p">
+            Select from wide ranges of amazing bikes. We provide best rates for bike rental services in entire Goa. Book
+            from our website or we also accept booking from whatsapp.
+        </p>
+        <div class="cars">
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/activa.jpg" alt="Activa Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Activa</h3>
+                    <p>Starting from &#x20B9;400/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Activa - ₹400/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Activa"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/Fascino.jpg" alt="Fascino Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Fascino</h3>
+                    <p>Starting from &#x20B9;400/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Fasicno - ₹400/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Fascino"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/dio.jpg" alt="Dio Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Dio</h3>
+                    <p>Starting from &#x20B9;400/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Dio - ₹400/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Dio"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/vespa.jpg" alt="Vaspa Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Vaspa</h3>
+                    <p>Starting from &#x20B9;400/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Vespa - ₹500/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Vaspa"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/tvsNtorq.jpg" alt="TVS Ntorq Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>TVS Ntorq</h3>
+                    <p>Starting from &#x20B9;500/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="TVS Ntorq - ₹500/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20TVS%20Ntorq"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/Aprilia.jpg" alt="Aprilia Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Aprilia</h3>
+                    <p>Starting from &#x20B9;600/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Aprilia - ₹600/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Aprilia"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/KTMDuke200.jpg" alt="KTM Duke 200 Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>KTM Duke 200</h3>
+                    <p>Starting from &#x20B9;700/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="KTM Duke 200 - ₹700/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20KTM%20Duke%20200"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/Avenger.jpg" alt="Avenger Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Avenger</h3>
+                    <p>Starting from &#x20B9;700/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Avenger - ₹700/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Avenger"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/r15.jpg" alt="R15 Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>R15</h3>
+                    <p>Starting from &#x20B9;700/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="R15 - ₹700/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20R15"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/KTMDuke250New.jpg" alt="KTM Duke 250 New Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>KTM Duke 250 New</h3>
+                    <p>Starting from &#x20B9;800/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="KTM Duke 250 New - ₹800/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20KTM%20Duke%20250%20New"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/KTMRC200OLD.jpg" alt="KTM RC 200 Old Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>KTM RC 200 Old</h3>
+                    <p>Starting from &#x20B9;800/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="KTM RC 200 OLD - ₹800/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20KTM%20RC%20200%20Old"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/BulletElectra.jpg" alt="Bullet Electra Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Bullet Electra</h3>
+                    <p>Starting from &#x20B9;800/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Bullet Electra - ₹800/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Bullet%20Electra"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/BulletClassic.jpg" alt="Bullet Classic Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Bullet Classic</h3>
+                    <p>Starting from &#x20B9;900/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Bullet Classic - ₹900/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Bullet%20Classic"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/BulletThunderbirdOld.jpg" alt="Bullet Thunderbird Old Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Bullet Thunderbird Old</h3>
+                    <p>Starting from &#x20B9;900/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Bullet Thunderbird Old - ₹900/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Bullet%20Thunderbird%20Old"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/KTMDuke390Old.jpg" alt="KTM Duke 390 Old Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>KTM Duke 390 Old</h3>
+                    <p>Starting from &#x20B9;1000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="KTM Duke 390 Old - ₹1000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20KTM%20Duke%20390%20Old"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/BulletThunderbirdNew.jpg" alt="Bullet Thunderbird New Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Bullet Thunderbird New</h3>
+                    <p>Starting from &#x20B9;1000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Bullet Thunderbird New - ₹1000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Bullet%20Thunderbird%20New"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/KTMDuke390New.jpg" alt="KTM Duke 390 New Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>KTM Duke 390 New</h3>
+                    <p>Starting from &#x20B9;1100/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="KTM Duke 390 New - ₹1100/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20KTM%20Duke%20390%20New"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/Benelli300.jpg" alt="Benelli 300 Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Benelli 300</h3>
+                    <p>Starting from &#x20B9;3000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Benelli 300 - ₹3000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Benelli%20300"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/HarleyDavidson750Street.jpg" alt="Harley Davidson 750 Street Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Harley Davidson 750 Street</h3>
+                    <p>Starting from &#x20B9;3500/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking"
+                            value="Harley Davidson 750 Street - ₹3500/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Harley%20Davidson%20750%20Street"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/HarleyDavidsonIron.jpg" alt="Harley Davidson Iron Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Harley Davidson Iron</h3>
+                    <p>Starting from &#x20B9;5000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Harley Davidson Iron - ₹4500/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Harley%20Davidson%20Iron"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/Benelli600.jpg" alt="Benelli 600 Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Benelli 600</h3>
+                    <p>Starting from &#x20B9;5000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Benelli 600 - ₹5000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Benelli%20600"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/HarleyDavidsonRoster.jpg" alt="Harley Davidson Roster Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Harley Davidson Roster</h3>
+                    <p>Starting from &#x20B9;6000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Harley Davidson Roster - ₹6000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Harley%20Davidson%20Roster"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/HarleyDavidson48.jpg" alt="Harley Davidson 48 Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Harley Davidson 48</h3>
+                    <p>Starting from &#x20B9;8000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Harley Davidson 48 - ₹8000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Harley%20Davidson%2048"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car_img">
+                    <img src="assets/HarleyDavidsonFatboy.jpg" alt="Harley Davidson Fatboy Bike Image">
+                    <a class="book_btn btn_call"
+                            href="tel:+919867344336">
+                            <i class="ri-phone-fill cto_c"></i></a>
+                </div>
+                <div class="car_content">
+                    <h3>Harley Davidson Fatboy</h3>
+                    <p>Starting from &#x20B9;10000/day</p>
+                    <div class="book_btn_container">
+                        <button class="book_btn web_booking" value="Harley Davidson Fatboy - ₹10000/Day">Book</button>
+                        <a class="book_btn btn_whatsapp"
+                            href="https://api.whatsapp.com/send?phone=+919867344336&text=Hello,%20I%20want%20to%20Book%20Harley%20Davidson%20Fatboy"><i
+                                class="ri-whatsapp-line"></i>Whatsapp Booking</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="services_container" id="Services">
+        <h1 class="section_heading">Our Services</h1>
+
+        <div class="services">
+
+            <div class="service">
+                <i class="fas fa-car"></i>
+                <h3>Quality Cars</h3>
+                <p>All of our cars are appropriately maintained and throughly examined to maintain quality.</p>
+            </div>
+
+            <div class="service">
+                <i class="fas fa-globe"></i>
+                <h3>Online Booking</h3>
+                <p>You can easily select and book your desired car from our website.</p>
+            </div>
+
+            <div class="service">
+                <i class="far fa-clock"></i>
+                <h3>24x7 Service</h3>
+                <p>We are working around the time to give you the service you deserve.</p>
+            </div>
+
+            <div class="service">
+                <i class="fas fa-users"></i>
+                <h3>500+ Happy Clients</h3>
+                <p>We have already served to more than 500 clients and All were very delighted with our services.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services_container" id="Contact">
+        <h1 class="section_heading">Contact Us</h1>
+        <p class="subtitle_p">Fill in the form if you want to contact us or have any queries for us.</p>
+
+        <form method="post" name="car-select-form" id="contact_form">
+
+            <div class="input_grp">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Please enter your full name" id="con_name" name="con_name" required>
+            </div>
+
+            <div class="input_grp">
+                <label for="con_email">Email</label>
+                <input type="email" placeholder="Please enter your email" id="con_email" name="con_email">
+            </div>
+
+            <div class="input_grp">
+                <label for="con_phone">Phone</label>
+                <input type="text" placeholder="Please enter your phone number" id="con_phone" name="con_phone"
+                    required>
+            </div>
+
+            <div class="input_grp">
+                <label for="con_msg">Message</label>
+                <textarea rows="4" placeholder="Please enter your message" id="con_msg" name="con_msg"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="submit btn btn_disabled" name="submit" id="contact_submit">Send</button>
+
+        </form>
+        
+        <div class="con_response_cont" id="con_success">
+            <div class="con_res">
+                <img src="assets/success.gif" alt="success image gif">
+                <p>Your message hae been successfully sent. We will soon get in touch with you.</p>
+                <div class="book_btn_container">
+                    <button class="book_btn back_btn"><i class="ri-arrow-left-line"></i>Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="con_response_cont" id="con_error">
+            <div class="con_res">
+                <img src="assets/error.png" alt="error image">
+                <p>Due to some technical difficulties we could not complete your request please try again later.</p>
+                <div class="book_btn_container">
+                    <button class="book_btn back_btn"><i class="ri-arrow-left-line"></i>Back</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer_content">
+
+            <div class="footer_mid">
+                <div>
+
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Cars">Cars</a></li>
+                        <li><a href="#Bikes">Bikes</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_left">
+                <div class="logo_container">
+                    <a href="#" class="logo"> <span>G</span>C<span class="">R</span>S</a>
+                    <div class="footer_mid_data_container">
+                        <h3 class="footer_mid_h3">Our Location for Bikes - </h3>
+                        <ul class="footer_mid_ul">
+                            <li class="footer_mid_li">Bike rent in Goa</li>
+                            <li class="footer_mid_li">Bike rent in Airport</li>
+                        </ul>
+                    </div>
+                    <div class="footer_mid_data_container">
+                        <h3 class="footer_mid_h3">Our Location for Self Driven Cars in Goa - </h3>
+                        <ul class="footer_mid_ul">
+                            <li class="footer_mid_li">Car rent in Goa</li>
+                            <li class="footer_mid_li">Car rent in Calangut</li>
+                            <li class="footer_mid_li">Car rent in Panjim</li>
+                            <li class="footer_mid_li">Car rent in Airport</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_right">
+                <div class="social_container">
+                    <h3>Follow Us-</h3>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/"><i class="ri-facebook-box-fill fb"></i></a>
+                        <a href="https://instagram.com/"><i class="ri-instagram-fill insta"></i></a>
+                        <a href="https://twitter.com/"><i class="ri-twitter-fill twitter"></i></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span class="copyright_span">@Copyright GoaCarRentalService All Rights Reserved</span>
+                </div>
+                <div class="credit">
+                <span class="maintained_span">Maintained By <a href="https://www.crazygeeks.in/" class="maintained_class">Crazy Geeks</a></span>
+                </div>
+            </div>
+
+        </div>
+        
+    </footer>
+
+</body>
+<script src="scripts/html2canvas.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="scripts/jquery.timepicker.min.js"></script>
+<script src="scripts/main.js"></script>
+
+</html>

@@ -1,0 +1,72 @@
+[12-Jun-2023 11:31:28 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 12 J...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(76): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
+[02-Aug-2023 10:17:29 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 2 Au...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(76): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
+[24-Oct-2023 19:52:43 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Tue, 24 O...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(76): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
+[27-Oct-2023 15:26:34 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Fri, 27 O...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(76): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
+[17-Nov-2023 22:30:14 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Fri, 17 N...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(76): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
+[18-Nov-2023 05:28:04 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (Reply-To): test@test in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:1165
+Stack trace:
+#0 [internal function]: PHPMailer\PHPMailer\PHPMailer->addAnAddress('Reply-To', 'test@test', 'Test')
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1124): call_user_func_array(Array, Array)
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1059): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('Reply-To', 'test@test', 'Test')
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(48): PHPMailer\PHPMailer\PHPMailer->addReplyTo('test@test', 'Test')
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 1165
+[18-Nov-2023 05:33:40 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 18 N...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(76): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
+[18-Nov-2023 05:35:24 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 18 N...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(81): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
+[18-Nov-2023 05:37:38 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php:2206
+Stack trace:
+#0 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1996): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 18 N...', '<h1>New booking...')
+#2 /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/vl0irbzzd8s0/public_html/libraries/sendEmailForm.php(81): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/vl0irbzzd8s0/public_html/libraries/PHPMailer/src/PHPMailer.php on line 2206
