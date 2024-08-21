@@ -16,6 +16,7 @@ if($_POST) {
 
     //Fetching variables
     $carType = strip_tags(htmlspecialchars($_POST['carType']));
+    $pick_up_location = strip_tags(htmlspecialchars($_POST['pick-up-location']));
     $name = strip_tags(htmlspecialchars($_POST['name']));
     $phone = strip_tags(htmlspecialchars($_POST['phone']));
     $email = strip_tags(htmlspecialchars($_POST['email']));
@@ -62,7 +63,9 @@ if($_POST) {
     '<h1>New Enquiry</h1>'.
     '<p>We have received a new Enquiry under the name <b>'.$name.'</b></p>'.
     '<h3>Booking details - </h3>'.
-    '<p>Vehicle Type: '.$carType.'</p>'.
+    '<p>Vehicle Type: '.$carType.'<br>Pick Up Location: '.$pick_up_location.    
+    '</p>'.
+    
     '<h3>Personal details - </h3>'.
     '<p>Full Name: '.$name.'<br>'.
     'Phone Number: '.$phone.'<br>'.
