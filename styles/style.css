@@ -13,7 +13,7 @@
 
     --home-title-size: 6rem;
     --home-ht: 50rem;
-    --modal-wd: 60rem;
+    --modal-wd: 35rem;
 
     --fs-h1: 3.5rem;
     --fs-h2: 2rem;
@@ -417,7 +417,7 @@ span.yellow {
 
 select,
 .input_grp {
-    width: 90%;
+    width: 92%;
 }
 
 label {
@@ -1211,12 +1211,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .book_btn {
     font-size: .8rem;
     display: flex;
-    width: 5rem;
+    width: 100%;
     height: 2.5rem;
     align-items: center;
     justify-content: center;
-    background-color: var(--clr-light-blue);
+    background-color: #13db98;
     color: white;
+    border-radius:5px;
     cursor: pointer;
 }
 
@@ -1226,7 +1227,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .book_btn:hover {
-    background-color: #3da1ff;
+    background-color: #22c388;
 }
 
 
