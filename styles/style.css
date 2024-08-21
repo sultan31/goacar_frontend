@@ -647,6 +647,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-bottom: 2rem;
 }
 
+#enquiry_form {
+    width: 100%;
+    max-width: 40rem;
+}
+
+#enquiry_form label {
+    font-weight: 500;
+}
+
+#enquiry_form .input_grp {
+
+    margin-bottom: 2rem;
+}
+
 .btn_confirm {
     width: 9rem !important;
     border-radius: 6px !important;
