@@ -26,6 +26,11 @@
 
 
     <title>GoaCarRentalServices</title>
+    <style>
+        datalist { 
+            position: absolute;
+        }
+    </style>
     
 </head>
 
@@ -875,7 +880,21 @@
                         </div>
 
                         <div class="input_grp">
-                            <select name="pick-up-location" id="pick-up-location" required>
+                            <!-- <input list="browsers" name="browser"> -->
+                            <input type="text" class="form-control" name="pick-up-location" list="pick-up-location" autofocus placeholder="Select Pickup Location">
+                            <datalist id="pick-up-location">
+                                
+                                <option value="Panjim "></option>
+                                <option value="Vasco da Gama"></option>
+                                <option value="Dabolim Airport"></option>
+                                <option value="Anjuna "></option>
+                                <option value="Calangute "></option>
+                                <option value="Thivim "></option>
+                                <option value="Karmali "></option>
+                                <option value="Margao "></option>
+                                <option value="Goa Airport "></option>
+                            </datalist>
+                            <!-- <select name="pick-up-location" id="pick-up-location" required>
                                 <option value="">Select Pickup Location</option>
                                 <option value="Panjim ">Panjim</option>
                                 <option value="Vasco da Gama">Vasco da Gama</option>
@@ -886,7 +905,12 @@
                                 <option value="Karmali ">Karmali</option>
                                 <option value="Margao ">Margao</option>
                                 <option value="Goa Airport ">Goa Airport</option>
-                            </select>
+                            </select> -->
+
+                            
+                            
+
+
                         </div>
 
                         <div class="input_grp btn_container">
@@ -996,11 +1020,13 @@
     $("#enquiry_form").submit(function (e) {
     //prevent page refresh
     e.preventDefault();
-
+    var dattt = $("#enquiry_form").serialize();
+        alert(dattt);return;
     //Make a POST request
     $.ajax({
                 dataType: "JSON",
-                url: "libraries/enquiry.php",
+                // url: "libraries/enquiry.php",
+                url: "<?php /enquiry.php",
                 type: "POST",
                 data: $("#enquiry_form").serialize(),
                 
@@ -1027,6 +1053,20 @@
             })
 
 })
+
+    $(document).ready(function() {
+            // When dropdown changes, update the input box
+            $('#pick-up-location').change(function() {
+                var selectedValue = $(this).val();
+                $('#manualInput').val(selectedValue);
+            });
+
+            // When typing in the input box, update the dropdown
+            $('#manualInput').on('input', function() {
+                var typedValue = $(this).val();
+                $('#pick-up-location').val(typedValue);
+            });
+        });
 </script>
 
 </html>
